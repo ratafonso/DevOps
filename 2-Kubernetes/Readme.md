@@ -72,4 +72,3 @@ Run the command ```kubectl scale replicaset meureplicaset --replicas 5```;
 After, run the command ```kubectl get pods``` for verify if the scaling occurs without errors;
 
 And for finish, run the command ```kubectl get pods``` and you can see all 5 instances running on the cluster;
-
