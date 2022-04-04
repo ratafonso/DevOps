@@ -23,26 +23,30 @@ The below are recommended so please try and have them installed as it will make 
  
 * 'Docker Desktop Installed with Kubernetes enabled'
 
---------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------
 
 # DevOps Challenge Digital - Workflow
 
 This project have as a objective achieve an Terraform and Kubernetes deploy and explanation.
 
-# Movie Self-Explanatory
+# Self-Explanatory Movie
 
 <https://ratafonso.wistia.com/medias/1h0z8kz9cy>
 
 ## Environment Pre-Requirements
 
-For this project will be execute, we can do some steps and install tools like terraform, Visual Studio Code, K3D, WSL (case you using Windows) and etc.
+For this project will be execute, we can do some steps and install tools like Terraform, Visual Studio Code, K3D, WSL (case you using Windows) and etc.
 
 # Localhost running this assessment
 
+- Terraform (<https://www.terraform.io/downloads>);
 - Docker Platform (<https://www.docker.com/products/docker-desktop>);
 - Visual Studio Code (<https://code.visualstudio.com/download>);
 - Git (<https://git-scm.com/downloads>);
 - GitHub Desktop (<https://desktop.github.com/>);
+- K3D (<https://k3d.io/v5.4.1/#installation>);
+- Kubectl (<https://kubernetes.io/docs/tasks/tools/>);
+- WSL2 (<https://docs.microsoft.com/en-us/windows/wsl/install>);
 
 ## Initial Steps
 
