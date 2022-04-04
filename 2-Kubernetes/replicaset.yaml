@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: ReplicaSet
 metadata:
-  name: meureplicaset
+  name: MyReplicaSet
 spec:
   selector:
     matchLabels:
