@@ -20,30 +20,16 @@ A new request to add a SQL database has come in. It would interact with the serv
 
 --------------------------------------------------------------------------------------------------------------------
 
-## Initial Steps
+# Initial Steps
 
-In this step, we will construct a specific environment for acomplish this test assessment;
+In this step, we use Terraform for construct a specific environment. We acomplish this test assessment when the code run with success;
 
 ## Creating the environment
 
-Create a new folder to this project on your machine.
+Navigate to 1-Terraform\terraform directory
 
-Windows
+Run the command ```terraform init``` and after, ```terraform plan```
 
-```mkdir DevOps```
+After received an output with all requirements and environment information, we can proceed with ```terraform apply```.
 
-```cd C:\DevOps```
-
-Type the command for open this directory with VSCode editor
-
-```code .```
-
-Linux
-
-```# mkdir /usr/src/DevOps```
-
-```# cd /usr/src/DevOps```
-
-Do Git clone and pull all repository contet in this folder ```DevOps```.
-
-```git clone https://github.com/ratafonso/DevOps.git```
+In case you are using AWS environment, don't forget to configure your AWS credentials. It's very important for complete this step.

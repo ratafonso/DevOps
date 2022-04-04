@@ -16,4 +16,4 @@ spec:
           - name: webapp
             image: sirfragalot/docker-demo:dcus
             ports:
-              - containerPort: 8080
+              - containerPort: 80

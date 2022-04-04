@@ -27,3 +27,49 @@ Scale the replicas up to 5 and record the action. Show the recorded action and t
 
 Using kubectl, show only the pods IPs and health under the headers IP and HEALTH
 
+--------------------------------------------------------------------------------------------------------------------
+
+# Initial Steps
+
+In this step, we use Kubernetes Platform for execute containers;
+
+## Creating the environment
+
+Navigate to 2-Kubernetes directory;
+
+Run the command ```k3d cluster list``` for verify if you have an cluster created on your localhost;
+
+Next step is run the command ```k3d cluster create teste --servers 2 --agents 2``` to create a Cluster with two servers and two agents;
+
+Next step is run the command ```kubectl cluster-info``` for obtain all information about the cluster;
+
+Next step is run the command ```kubectl get nodes``` for verify each node and your role;
+
+Next step is run the command ```docker container ls``` for verify all containers that you have been created before;
+
+Next step is run the command ```kubectl apply -f DeploymentTest.yaml``` for deploy this deployment settings;
+
+Next step is run the command ```kubectl get pods``` for get pods information output;
+
+We gonna delete the DeploymentTest and configure a replica set for this;
+
+Run the command ```kubectl delete -f DeploymentTest.yaml``` to take this remove procedure;
+
+## Creating a Replica Set for Kubernetes Containers
+
+Now, we can create a replica set configuration for our cluster, following this steps:
+
+Run the command ```kubectl apply -f replicaset.yaml```
+
+Next step is run the command ```kubectl get replicaset``` and after, run ```kubectl get pods``` for check if our deployment finished with success;
+
+## Scaling the App Envinroment
+
+Now, we can set the Replica Set for 5, let's do it
+
+Run the command ```kubectl scale replicaset meureplicaset --replicas 5```;
+
+After, run the command ```kubectl get pods``` for verify if the scaling occurs without errors;
+
+And for finish, run the command ```kubectl get pods``` and you can see all 5 instances running on the cluster;
+
