@@ -52,17 +52,17 @@ In this step, we will construct all enviroment requirements for initiate the pro
 
 Create a new folder to this project on your machine.
 
-### Windows
+Windows
 
 ```mkdir DevOps```
 
 ```cd C:\DevOps```
 
-## Type the command for open this directory with VSCode editor
+Type the command for open this directory with VSCode editor
 
 ```code .```
 
-### Linux
+Linux
 
 ```# mkdir /usr/src/DevOps```
 
