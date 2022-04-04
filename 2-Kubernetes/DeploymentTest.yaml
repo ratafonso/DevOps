@@ -19,15 +19,14 @@ spec:
               - containerPort: 8080
 ---
 
-apiVersion: apps/v1
-kind: apiVersion: v1
-kind: Service
-metadata:
-  name: webapp
-spec:
-  selector:
-    app: webapp
-  ports:
-  - protocol: TCP
-    port: 8080
-  type: NodePort
+#apiVersion: apps/v1
+#kind: Service
+#metadata:
+#  name: webapp
+#spec:
+#  selector:
+#    app: webapp
+#  ports:
+#  - protocol: TCP
+#    port: 8080
+#  type: NodePort
