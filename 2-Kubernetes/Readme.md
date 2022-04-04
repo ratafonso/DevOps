@@ -39,7 +39,7 @@ Navigate to 2-Kubernetes directory;
 
 Run the command ```k3d cluster list``` for verify if you have an cluster created on your localhost;
 
-Next step is run the command ```k3d cluster create teste --servers 2 --agents 2``` to create a Cluster with two servers and two agents;
+Next step is run the command ```k3d cluster create teste --servers 3 --agents 3``` to create a High Availablity Cluster;
 
 Next step is run the command ```kubectl cluster-info``` for obtain all information about the cluster;
 
