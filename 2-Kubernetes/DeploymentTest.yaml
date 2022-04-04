@@ -1,19 +1,10 @@
 apiVersion: apps/v1
-kind: DeploymentTest
+kind: Pod
 metadata:
-  name: mydeployment
+  name: DeploymentTest
 spec:
-  replicas: 2
-  selector:
-    matchLabels:
-      app: webapp
-  template:
-    metadata:
-      labels:
-        app: webapp
-    spec:
-      containers:
-          - name: webapp
-            image: sirfragalot/docker-demo:dcus
-            ports:
-              - containerPort: 80
+  containers:
+    - name: webapp
+      image: sirfragalot/docker-demo:dcus
+      ports:
+        - containerPort: 8080
