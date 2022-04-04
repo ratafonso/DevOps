@@ -49,11 +49,13 @@ Next step is run the command ```docker container ls``` for verify all containers
 
 Next step is run the command ```kubectl apply -f DeploymentTest.yaml``` for deploy this deployment settings;
 
+Next step is run the command ```kubectl port-forward Deployment/deploymenttest 8080:8080``` for map the Pod Port on my localhost machine only to test;
+
 Next step is run the command ```kubectl get pods``` for get pods information output;
 
 We gonna delete the DeploymentTest and configure a replica set for this;
 
-Run the command ```kubectl delete -f DeploymentTest.yaml``` to take this remove procedure;
+You can run the command ```kubectl delete -f DeploymentTest.yaml``` to remove DeploymentTest if you need;
 
 ## Creating a Replica Set for Kubernetes Containers
 
@@ -67,8 +69,12 @@ Next step is run the command ```kubectl get replicaset``` and after, run ```kube
 
 Now, we can set the Replica Set for 5, let's do it
 
-Run the command ```kubectl scale replicaset meureplicaset --replicas 5```;
+Run the command ```kubectl scale replicaset myreplicaset --replicas 5```;
 
 After, run the command ```kubectl get pods``` for verify if the scaling occurs without errors;
 
 And for finish, run the command ```kubectl get pods``` and you can see all 5 instances running on the cluster;
+
+## List IP and HEALTH status using kubectl
+
+For check all information about a specific pod, you can run the command ```kubectl describe Pod/myreplicaset```

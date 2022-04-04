@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: ReplicaSet
 metadata:
-  name: MyReplicaSet
+  name: myreplicaset
 spec:
   selector:
     matchLabels:
@@ -15,4 +15,4 @@ spec:
           - name: webapp
             image: sirfragalot/docker-demo:dcus
             ports:
-              - containerPort: 80
+              - containerPort: 8080
