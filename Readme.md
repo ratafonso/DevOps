@@ -71,8 +71,3 @@ Create a new folder to this project on your machine.
 Do Git clone and pull all repository contet in this folder ```DevOps```.
 
 ```git clone https://github.com/ratafonso/DevOps.git```
-
-=========================================================================================================
-
-#
-
