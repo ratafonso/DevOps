@@ -31,7 +31,7 @@ This project have as a objective achieve an Terraform and Kubernetes deploy and 
 
 # Self-Explanatory Movie
 
-<https://ratafonso.wistia.com/medias/1h0z8kz9cy>
+<https://ratafonso.wistia.com/medias/p621sdxpo5>
 
 ## Environment Pre-Requirements
 
