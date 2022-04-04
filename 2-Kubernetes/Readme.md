@@ -77,4 +77,4 @@ And for finish, run the command ```kubectl get pods``` and you can see all 5 ins
 
 ## List IP and HEALTH status using kubectl
 
-For check all information about a specific pod, you can run the command ```kubectl describe Pod/myreplicaset```
+For check all information about a specific pod, you can run the command ```kubectl describe Pod/myreplicaset``` or you can use this command ```kubectl get pods -o wide```
